@@ -1,0 +1,6 @@
+.order-banner__bg {
+  background-image: url(../img/order-banner/order-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 26%; }

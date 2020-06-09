@@ -1,0 +1,7 @@
+@function get-vw($object) {
+	$vw: (1920 * 0.01) * 1px;
+  @return ($object / $vw) * 1vw;
+}
+$Circe:Circe;
+$acent:#355da8;
+$footerColor:#1e3662;

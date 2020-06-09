@@ -1,0 +1,154 @@
+<div class="popup popup-callback callback">
+	<div class="popup-table table">
+		<div class="cell">
+			<div class="popup-content">
+				<div class="popup-body">
+					<div class="popup-close"></div>
+
+					<div class="callback-image">
+						<img src="img/callback-img.png" alt="" />
+					</div>
+					<div class="popup__title callback__title">Напишите нам сообщение</div>
+					<div class="popup__txt callback__txt">и наш менеджер свяжется с Вами</div>
+					<form action="#" enctype="multipart/form-data" class="popup-form form callback__form">
+						<div class="form-input callback__input">
+							<input autocomplete="off" type="text" onkeyup="checkParams();" data-value="Ваше имя" class="input req" />
+						</div>
+						<div class="form-input callback__input">
+							<input autocomplete="off" type="email" onkeyup="checkParams();" data-value="Ваш e-mail" class="input req email" />
+						</div>
+						<div class="form-input callback__input callback__input-tel">
+							<input autocomplete="off" type="tel" onkeyup="checkParams();" data-value="Ваш телефон" class="input req tel" />
+						</div>
+						<div class="form-textarea callback__textarea">
+							<textarea name="" id="" class="textarea" onkeyup="checkParams();"  data-value="Сообщение"></textarea>
+						</div>
+						<div class="form-button callback__button">
+							
+						    <input type="file" name="file" id="file" class="input-file">
+						    <label for="file" class="callback-load js-labelFile">
+						      <span class="sl"></span>
+						      <span class="js-fileName">Прикрепить файл</span>
+						    </label>
+					
+							<button type="submit" class=" form__btn btn">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup-login-in login-in">
+	<div class="popup-table table">
+		<div class="cell">
+			<div class="popup-content">
+				<div class="popup-body">
+					<div class="popup-close"></div>
+
+					<div class="popup-body__box box-login">
+						<div class="login-in__title">Войти</div>
+						<form action="#" class="popup-form form login-in__form">
+							<div class="form-input login-in__input">
+								<input autocomplete="off" type="email" onkeyup="checkParams();" data-value="Адрес электронной почты" class="input req email" />
+							</div>
+							<div class="form-input login-in__input">
+								<input autocomplete="off" type="text" onkeyup="checkParams();" data-value="Пароль" class="input req pass" />
+							</div>
+							<div class="login-in__txt">Забыли пароль?</div>
+							<div class="form-button login-in__button">				
+								<button type="submit" class="form__btn disabled btn login-in__btn">Войти</button>
+							</div>
+						</form>
+						<div class="reg-box">
+							<span class="naccnt">Нет аккаунта?</span>
+							<span class="reg">Зарегестрируйтесь</span>
+						</div>
+					</div>
+
+					<div class="popup-body__box box-reg">
+						<div class="login-in__title">Зарегистрироваться</div>
+						<form action="#" class="popup-form form login-in__form">
+							<div class="form-input login-in__input">
+								<input autocomplete="off" type="text" onkeyup="checkParams();" data-value="Имя" class="input req" />
+							</div>
+							<div class="form-input login-in__input">
+								<input autocomplete="off" type="email" onkeyup="checkParams();" data-value="Адрес электронной почты" class="input req email" />
+							</div>
+							<div class="form-input login-in__input">
+								<input autocomplete="off" type="text" onkeyup="checkParams();"  data-value="Пароль" class="input req pass" />
+							</div>
+							<div class="form-button login-in__button">				
+								<button type="submit"  class="form__btn btn login-in__btn">Зарегистрироваться</button>
+							</div>
+						</form>
+						<div class="reg-box">
+							<span>уже Зарегистрированы?</span>
+							<span class="login">Войти</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="popup popup-orderDelivery orderDelivery">
+	<div class="popup-table table">
+		<div class="cell">
+			<div class="popup-content">
+					<div class="popup-close"></div>
+
+					<div class="orderDelivery__bg ibg">
+						<img src="img/order-delivery.png" alt="" />
+						<div class="orderDelivery__row">
+							<div class="orderDelivery__icon"></div>
+							<h3 class="orderDelivery__title">Заказать <br /> доставку</h3>
+						</div>
+					</div>
+
+					<form action="#" class="popup-form form orderDelivery__form">
+						<div class="form-textarea orderDelivery__textarea">
+							<h4 class="form__title">Детали заказа</h4>	
+							<span class="form__txt">Что вам необходимо?</span>
+							<textarea name="" id="" class="textarea"></textarea>
+						</div>
+						<div class="form-input orderDelivery__input">
+							<h4 class="form__title">Место доставки</h4>	
+							<span class="form__txt">Укажите точный адрес доставки</span>
+							<input autocomplete="off" type="text" class="input req" />
+						</div>
+						<div class="form-input orderDelivery__input">
+							<h4 class="form__title">Контактная информация</h4>	
+							<span class="form__txt">Проверьте указанную контактную информацию</span>
+							<input autocomplete="off" type="tel" data-value="+ Добавьте ваш номер телефона" class="input req email" />
+						</div>
+			
+						<div class="form-button orderDelivery__button">
+							<button type="submit" class=" form__btn btn orderDelivery__btn">Подтвердить</button>
+						</div>
+					</form>
+					
+			</div>
+		</div>
+	</div>
+</div>
+
+					
+
+
+<script>
+	function checkParams() {
+		$('input, .textarea').each(function(){
+			$(this).blur(function(){
+				if (this.length == 0 && this.value == '' || this.value == $(this).attr('data-value')){
+					$('.login-in__btn').addClass('disabled');
+				}else {
+		      $('.login-in__btn').removeClass('disabled');
+			  }
+			});
+		});
+	}
+</script>
